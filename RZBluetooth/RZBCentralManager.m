@@ -189,6 +189,7 @@
     switch (central.state) {
         case CBCentralManagerStateUnknown:
         case CBCentralManagerStateResetting:
+        case CBCentralManagerStatePoweredOff:
             [self.dispatch resetCommands];
             break;
         default:
